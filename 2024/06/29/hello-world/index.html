@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/@waline/client@v3/dist/waline.css"
-  />
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Hexo Theme Redefine">
@@ -282,15 +278,14 @@
 
                 </div>
             <!-- ... -->
-  <div id="waline"></div>
-  <script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-
-    init({
-      el: '#waline',
-      serverURL: 'https://blog-ghi6-dovjntl29-peiyitings-projects.vercel.app/',
-    });
-  </script>
+ <div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'tLmCHado5qadxznMxJlLwAjK-MdYXbMMI',
+            appKey: 'IgHvuVrfZYLqOvh9EHUWtX93'
+        })
+    </script>
 
             
 
